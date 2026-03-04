@@ -15,7 +15,7 @@
   </header>
 
   <!-- Main Content Section -->
-  <main class="main-content">
+  <!-- <main class="main-content">
     <section class="search-section">
       <div class="search-box">
         <input type="text" id="cityInput" placeholder="Enter City Name...">
@@ -29,13 +29,54 @@
       <p id="description"></p>
       <h3 id="temperature"></h3>
     </section>
-  </main>
+  </main> -->
 
-  <!-- Footer Section -->
-  <!-- <footer class="footer">
-    <p>Developed by Shreyash Gawande © 2025</p>
-  </footer> -->
+
+  <main class="main-content">
+
+<section class="weather-card">
+
+<div class="search-box">
+<input type="text" id="cityInput" placeholder="Enter City Name...">
+<button onclick="getWeather()">Search</button>
+</div>
+
+<div id="weatherBox" class="weather-info hidden">
+
+<h2 id="cityName"></h2>
+
+<img id="weatherIcon" src="" alt="weather icon">
+
+<h1 id="temperature"></h1>
+
+<p id="description"></p>
+
+<div class="weather-details">
+
+<div class="detail">
+<span>💧 Humidity</span>
+<p id="humidity"></p>
+</div>
+
+<div class="detail">
+<span>🌬 Wind</span>
+<p id="wind"></p>
+</div>
+
+<div class="detail">
+<span>🌡 Feels Like</span>
+<p id="feels"></p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
 
   <script src="script.js"></script>
 </body>
 </html>
+
